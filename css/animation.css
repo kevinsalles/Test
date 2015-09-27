@@ -7,6 +7,21 @@
     background-color: chocolate;
 }
 
+.subcarre{
+    position: absolute;
+    top: 10px;
+    left:10px;
+    height: 80px;
+    background-color: white;
+}
+
 body{
+
+}
+
+#wrapper{
     position: relative;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
 }
