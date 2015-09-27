@@ -9,7 +9,12 @@ var velocity2 = 20;
 var anim = false;
 var subcarre = document.getElementsByClassName("subcarre");
 var div = document.getElementsByClassName("carre");
-subcarre[0].style.width = (div[0].style.width - 20)+"px";
+
+window.onload = function(){
+
+    subcarre[0].style.width = (div[0].offsetWidth - 20)+"px";
+};
+
 
 function Active(){
 
