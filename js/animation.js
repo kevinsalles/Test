@@ -39,6 +39,7 @@ function Active(){
         setTimeout(Init,speed);
     }
 }
+fdgfdg
 
 function Init(){
 
