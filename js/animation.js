@@ -72,5 +72,4 @@ function Anim(){
 
 function Stop(){
     anim = false;
-    Init();
 }
