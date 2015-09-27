@@ -9,7 +9,6 @@ var velocity2 = 20;
 var anim = false;
 var subcarre = document.getElementsByClassName("subcarre");
 var div = document.getElementsByClassName("carre");
-//subcarre[0].style.width = (div[0].style.width - 20)+"px";
 
 function Active(){
 
@@ -17,7 +16,7 @@ function Active(){
     {
         width += velocity1;
         div[0].style.width = width + "px";
-        subcarre[0].style.width = (div[0].style.width - 20)+"px";
+        subcarre[0].style.width = (div[0].offsetWidth - 20)+"px";
         setTimeout(Active,speed);
     }
     else if(left < 800)
@@ -26,7 +25,7 @@ function Active(){
         width -= velocity1;
         div[0].style.left = left + "px";
         div[0].style.width = width + "px";
-        subcarre[0].style.width = (div[0].style.width - 20)+"px";
+        subcarre[0].style.width = (div[0].offsetWidth - 20)+"px";
         setTimeout(Active,speed);
     }
     else if(anim)
@@ -43,14 +42,14 @@ function Init(){
         width += velocity2;
         div[0].style.left = left + "px";
         div[0].style.width = width + "px";
-        subcarre[0].style.width = (div[0].style.width - 20)+"px";
+        subcarre[0].style.width = (div[0].offsetWidth - 20)+"px";
         setTimeout(Init,speed);
     }
     else if(width > 100)
     {
         width -= velocity2;
         div[0].style.width = width + "px";
-        subcarre[0].style.width = (div[0].style.width - 20)+"px";
+        subcarre[0].style.width = (div[0].offsetWidth - 20)+"px";
         setTimeout(Init,speed);
     }
     else if(anim)
